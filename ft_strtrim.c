@@ -91,17 +91,3 @@ char        *ft_strtrim(char *s)
     *ptr = '\0';
     return (ptr);
 }
-
-int main() 
-{
-  char *s1 = "   \t  \n\n \t\t  \n\n\nHello \t  Please\n Trim me !\n   \n \n \t\t\n  ";
-  int ret = ft_count_words(s1);
-  char *s2 = "   \t  \n\n \t\t  \n\n\nHello \t  Please\n Trim me !\n   \n \n \t\t\n  ";
-  int ret1 = ft_len(s2);
-  char *a =  ft_strtrim(s1);
-
-  printf("%s\n", a);
-  printf("%d\n",ret);
-  printf("%d\n",ret1);
-  return 0;
-}
